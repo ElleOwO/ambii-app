@@ -1,6 +1,6 @@
 <template>
     <div class="button-container">
-    <button class="buttons-vue">Enter </button>
+    <button class="buttons-vue"><slot></slot> </button>
 </div>
 </template>
 
@@ -16,7 +16,6 @@
     margin-left:140px;
     border-radius: 36px;
     width:100px;
-
     z-index: 4;
 
 }
@@ -31,7 +30,7 @@
     background:none;
     height: 50px;
 
-    
+
 
    }
 </style>

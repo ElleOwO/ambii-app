@@ -1,14 +1,14 @@
 <template>
 <body>
     <div class="app-body">
-      <h1 class="title">{{ title }}</h1>
+      <!-- <h1 class="title">{{ title }}</h1>
       <img v-bind:src="frontImage"/>
 
       <div v-if="showModal"><ModalForm/></div>
       <Buttonsvue @click="toggleModal"/>
       <router-link :to="{name: 'Home'}">Home</router-link>
+      <router-view/> -->
       <router-view/>
-
 
 
 
