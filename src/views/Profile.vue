@@ -125,7 +125,7 @@ export default{
 
 }
 .pill{
-    background: rgb(213, 174, 215);
+    background: rgb(207, 225, 230);
     width: 100px;
     height: 25px;
     border-radius: 20px;

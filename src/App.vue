@@ -78,7 +78,7 @@ body{
   border: 2px solid #3333335d; /* iPhone border color */
   border-radius: 36px; /* Rounded corners */
   position: relative;
-  background-color: #f0f7f6
+  background-color: #f0f7f6;
 
 ; /* Background color of the iPhone */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */

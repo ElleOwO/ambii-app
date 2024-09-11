@@ -4,11 +4,11 @@
      <img id="profilePic" v-bind:src="profilePic" @click="toProfile"/>
     </div>
     <div class="matchContainer"></div>
-    <div id="messageContainer">
-        <div class="message"></div>
-        <div class="message"></div>
-        <div class="message"></div>
-        <div class="message"></div>
+    <div id="messageContainer" >
+        <div class="message" @click="toMessenger"></div>
+        <div class="message" @click="toMessenger"></div>
+        <div class="message" @click="toMessenger"></div>
+        <div class="message" @click="toMessenger"></div>
     </div>
     <div class = "groups"></div>
     <div class = "groups"></div>
@@ -35,6 +35,10 @@ export default{
 
         toProfile(){
             this.$router.push({name: 'Profile'})
+        },
+        toMessenger(){
+            this.$router.push({name: 'Messenger'})
+
         },
     }
 }
@@ -67,6 +71,11 @@ export default{
     z-index: 1;
 
 }
+
+.picContainer:hover{
+    background:rgb(192, 227, 197);
+
+}
 #profilePic{
     display: inline-block;
     height:100%;
@@ -79,6 +88,8 @@ export default{
     z-index: 100;
     cursor: pointer;
 }
+
+
 .matchContainer{
 
     width: 300px;
@@ -99,12 +110,16 @@ export default{
     width: 300px;
     justify-content: space-between;
     margin: 10px auto;
+    cursor: pointer;
 }
 .message{
     width:50px;
     height: 50px;
     background: rgb(231, 231, 231);
     border-radius: 10px;
+}
+.message:hover{
+    background: rgba(221, 160, 221, 0.498);
 }
 .groups{
     width:300px;
