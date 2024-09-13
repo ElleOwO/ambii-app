@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Profile from '../views/Profile.vue'
-import Messenger from '../views/Messenger.vue'
+import Messenger from '../views/Messenger/Messenger.vue'
+import MessengerDash from '../views/Messenger/MessengerDash.vue'
 
 const routes = [
 
@@ -25,6 +26,11 @@ const routes = [
     path: '/messenger',
     name: 'Messenger',
     component: Messenger,
+  },
+  {
+    path: '/messengerdash',
+    name: 'MessengerDash',
+    component: MessengerDash,
   }
 
 ]
