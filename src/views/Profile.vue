@@ -19,7 +19,7 @@
     </div>
     <div class = "prompt"></div>
 
-    <Buttonsvue class="dashbutton" @click="sendHome">{{ buttonText }}</Buttonsvue>
+    <Buttonsvue class="dashbutton" @click="backToDash">{{ buttonText }}</Buttonsvue>
 
  </div>
 </template>
@@ -33,8 +33,8 @@ export default{
     }),
     components: { Buttonsvue },
     methods: {
-        sendHome(){
-        this.$router.push({name: 'Home'});
+        backToDash(){
+        this.$router.push({name: 'Dashboard'});
         },
 
         toProfile(){

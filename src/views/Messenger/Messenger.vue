@@ -14,7 +14,7 @@
  </div>
 </template>
 <script>
-import Buttonsvue from '../components/modal-button.vue';
+// import Buttonsvue from '../../components/modal-button.vue';
 
 export default {
 
@@ -67,6 +67,7 @@ export default {
     margin: 10px auto ;
     width: calc(100% - 10px);
     height: 40px;
+    align-content: center;
 
 
 }
@@ -113,5 +114,6 @@ export default {
     padding-left: 10px;
 
 }
+
 
 </style>

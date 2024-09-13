@@ -5,10 +5,11 @@
     </div>
     <div class="matchContainer"></div>
     <div id="messageContainer" >
-        <div class="message" @click="toMessenger"></div>
-        <div class="message" @click="toMessenger"></div>
-        <div class="message" @click="toMessenger"></div>
-        <div class="message" @click="toMessenger"></div>
+        <div class="message" @click="toMessages"></div>
+        <div class="message" @click="toMessages"></div>
+        <div class="message" @click="toMessages"></div>
+        <div class="message" @click="toMessages"></div>
+
     </div>
     <div class = "groups"></div>
     <div class = "groups"></div>
@@ -36,8 +37,8 @@ export default{
         toProfile(){
             this.$router.push({name: 'Profile'})
         },
-        toMessenger(){
-            this.$router.push({name: 'Messenger'})
+        toMessages(){
+            this.$router.push({name: 'MessengerDash'})
 
         },
     }
