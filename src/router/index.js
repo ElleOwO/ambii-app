@@ -4,6 +4,7 @@ import Dashboard from '../views/Dashboard.vue'
 import Profile from '../views/Profile.vue'
 import Messenger from '../views/Messenger/Messenger.vue'
 import MessengerDash from '../views/Messenger/MessengerDash.vue'
+import Matches from '../views/Matches.vue'
 
 const routes = [
 
@@ -31,6 +32,11 @@ const routes = [
     path: '/messengerdash',
     name: 'MessengerDash',
     component: MessengerDash,
+  },
+  {
+    path: '/matches',
+    name: 'Matches',
+    component: Matches,
   }
 
 ]
