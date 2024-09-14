@@ -24,7 +24,7 @@ export default {
 <style>
     .matchesContainer{
         border-radius: 25px;
-        box-shadow: inset 0px 4px 30px 1px rgba(100, 68, 94, 0.153), inset 0px -4px 50px 1px rgba(0, 0, 0, 0.099);
+        box-shadow: inset 0px 4px 30px 1px rgba(15, 14, 15, 0.065), inset 0px -4px 50px 1px rgba(49, 49, 49, 0.018);
 
         display: flex;
         flex-direction: column;
@@ -57,7 +57,7 @@ export default {
         color: rgb(200, 200, 200);
     }
     .matchesContainer :nth-child(3){
-        box-shadow: inset 0px 4px 30px 1px rgba(100, 68, 94, 0.27), inset 0px -4px 50px 1px rgba(142, 90, 131, 0.27);
+        box-shadow: inset 0px 4px 30px 1px rgba(100, 68, 94, 0.104), inset 0px -4px 50px 1px rgba(142, 90, 131, 0.059);
 
         width:100%;
         height: 100%;
