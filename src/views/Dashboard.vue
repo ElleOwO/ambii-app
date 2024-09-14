@@ -3,7 +3,7 @@
     <div class="picContainer">
      <img id="profilePic" v-bind:src="profilePic" @click="toProfile"/>
     </div>
-    <div class="matchContainer"></div>
+    <div class="matchContainer" @click="toMatches"></div>
     <div id="messageContainer" >
         <div class="message" @click="toMessages"></div>
         <div class="message" @click="toMessages"></div>
@@ -39,6 +39,10 @@ export default{
         },
         toMessages(){
             this.$router.push({name: 'MessengerDash'})
+
+        },
+        toMatches(){
+            this.$router.push({name: 'Matches'})
 
         },
     }
@@ -137,6 +141,11 @@ export default{
     margin-left: 160px;
     width:3em;
     height: 3em;
+}
+
+.matchContainer:hover{
+    background: rgb(236, 236, 236);
+    box-shadow: inset 4px 4px 10px 2px rgba(10, 10, 10, 0.27), inset -2px -4px 15px 5px rgb(254, 252, 252);
 }
 
 </style>
