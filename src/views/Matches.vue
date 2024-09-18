@@ -88,6 +88,8 @@ export default {
     grid-column: 4; /* Places the second circle in the third column */
 }
 
-
+.matchesContainer .circle i{
+margin: auto;
+}
 
 </style>
