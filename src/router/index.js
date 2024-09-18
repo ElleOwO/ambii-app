@@ -5,6 +5,7 @@ import Profile from '../views/Profile.vue'
 import Messenger from '../views/Messenger/Messenger.vue'
 import MessengerDash from '../views/Messenger/MessengerDash.vue'
 import Matches from '../views/Matches.vue'
+import Featured from '../views/Featured.vue'
 
 const routes = [
 
@@ -37,7 +38,12 @@ const routes = [
     path: '/matches',
     name: 'Matches',
     component: Matches,
-  }
+  },
+  {
+    path: '/featured',
+    name: 'Featured',
+    component: Featured,
+  },
 
 ]
 

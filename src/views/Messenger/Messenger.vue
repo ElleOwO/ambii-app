@@ -4,6 +4,7 @@
     <div class="detailsContainer">
         <Buttonsvue class="backToDash" @click="backToDash" ><i class="fa-solid fa-left-long fa-2xl" ></i>
         </Buttonsvue>
+        <div class="icon-border"><i class="fa-solid fa-user"></i></div>
     </div>
     <div class = "speechBubble">hi</div>
     <div class = "speechBubble"></div>
@@ -14,7 +15,6 @@
  </div>
 </template>
 <script>
-// import Buttonsvue from '../../components/modal-button.vue';
 
 export default {
 
@@ -44,6 +44,8 @@ export default {
     background: rgb(255, 250, 241);
     grid-column: 1 / 3; /* Span both columns */
     grid-row: 1 / 2;    /* Place it in the first row */
+    color: pink;
+
 
 }
 .backToDash{
@@ -62,6 +64,25 @@ export default {
 
 
 }
+
+.detailsContainer .fa-user {
+    justify-self: left;
+    margin: 5px 0 0 200px;
+    border: 1px solid peachpuff;
+    ;
+    padding: 12px;
+    border-radius:50%;
+
+
+
+}
+
+/* .icon-border{
+    margin: 20px 0 0 200px;
+    height:50px;
+    width: 50px;
+    border: 1px solid black;
+} */
 .speechBubble{
     background: aliceblue;
     margin: 10px auto ;

@@ -1,25 +1,25 @@
 <template>
-        <Buttonsvue class="backToDash" @click="backToDash" ><i class="fa-solid fa-left-long fa-2xl" ></i></Buttonsvue>
+        <backToDash class="button-dash"><i class="fa-solid fa-left-long fa-2xl" ></i></backToDash>
         <div class="messageDashContainer">
 
             <div class="card">
                 <div class="tab" @click="toMessenger()">
-                    <a href="#"></a>
+                    <a href="#"><i class="fa-solid fa-message fa-xs"></i></a>
                 </div>
                 <div class="tab" @click="toMessenger()">
-                    <a href="#"></a>
+                    <a href="#"><i class="fa-solid fa-user fa-xs"></i></a>
                 </div>
                 <div class="tab" @click="toMessenger()">
-                    <a href="#"></a>
+                    <a href="#"><i class="fa-solid fa-user fa-xs"></i></a>
                 </div>
                 <div class="tab" @click="toMessenger()">
-                    <a href="#"></a>
+                    <a href="#"><i class="fa-solid fa-user fa-xs"></i></a>
                 </div>
             </div>
             <div class="chat-container">
-            <div class ="chatMessage" @click="toMessenger()"><div class="iconpic"></div> hi</div>
-            <div class ="chatMessage" @click="toMessenger()"><div class="iconpic"></div> hi</div>
-            <div class ="chatMessage" @click="toMessenger()"><div class="iconpic"></div> hi</div>
+            <div class ="chatMessage" @click="toMessenger()"><div class="iconpic"><i class="fa-solid fa-user fa-xs"></i></div> hi</div>
+            <div class ="chatMessage" @click="toMessenger()"><div class="iconpic"><i class="fa-solid fa-user fa-xs"></i></div> hi</div>
+            <div class ="chatMessage" @click="toMessenger()"><div class="iconpic"><i class="fa-solid fa-user fa-xs"></i></div> hi</div>
 
             </div>
 
@@ -28,16 +28,20 @@
 </template>
 
 <script>
+import backToDash from '@/components/button-dash.vue';
+
 export default {
 
-methods:{
-    backToDash(){
-    this.$router.push({name: 'Dashboard'});
-    },
-    toMessenger(){
-    this.$router.push({name: 'Messenger'});
-    },
-}
+components: {backToDash},
+
+    methods:{
+        backToDash(){
+        this.$router.push({name: 'Dashboard'});
+        },
+        toMessenger(){
+        this.$router.push({name: 'Messenger'});
+        },
+    }
 }
 </script>
 
@@ -48,6 +52,9 @@ methods:{
     font-size: 10px;
     background:aliceblue;
 
+}
+.button-dash{
+    padding-left: 30px;
 }
 .card {
     display: flex;
@@ -60,6 +67,12 @@ methods:{
     border-top: none; /* Remove top border of card */
     position: relative;
     z-index: 2;
+}
+.card i{
+    color:pink;
+}
+.card i:hover{
+    color:rgb(192, 227, 197);
 }
 
 .tab {
@@ -77,7 +90,10 @@ methods:{
     outline: 2.5px solid aliceblue;
     cursor: pointer;
 }
-
+i{
+    margin: auto;
+    margin-top: 15px;
+}
 a {
     text-decoration: none;
     color: #333;

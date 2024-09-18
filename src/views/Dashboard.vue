@@ -1,9 +1,9 @@
 <template>
 <div id="dashContainer">
-    <div class="picContainer">
-     <img id="profilePic" v-bind:src="profilePic" @click="toProfile"/>
-    </div>
-    <div class="matchContainer" @click="toMatches"></div>
+        <div class="picContainer">
+        <img id="profilePic" v-bind:src="profilePic" @click="toProfile"/>
+        </div>
+        <div class="matchContainer" @click="toMatches"></div>
     <div id="messageContainer" >
         <div class="message" @click="toMessages"></div>
         <div class="message" @click="toMessages"></div>
@@ -11,8 +11,11 @@
         <div class="message" @click="toMessages"></div>
 
     </div>
-    <div class = "groups"></div>
-    <div class = "groups"></div>
+    <div class="group-container" @click="toFeatured">
+        <div class = "groups"></div>
+        <div class = "groups"></div>
+        <div class = "groups"></div>
+    </div>
 
     <Buttonsvue class="dashbutton" @click="sendHome">{{ buttonText }}</Buttonsvue>
 
@@ -43,6 +46,10 @@ export default{
         },
         toMatches(){
             this.$router.push({name: 'Matches'})
+
+        },
+        toFeatured(){
+            this.$router.push({name: 'Featured'})
 
         },
     }
@@ -77,6 +84,7 @@ export default{
 
 }
 
+
 .picContainer:hover{
     background:rgb(192, 227, 197);
 
@@ -109,12 +117,17 @@ export default{
 
 
 }
+.matchContainer:hover{
+    box-shadow: inset 1px 1px 1px 1px rgb(192, 227, 197), inset -1px -1px 1px 1px rgb(192, 227, 197);
+
+}
+
 #messageContainer{
     display: flex;
     flex-direction: row;
     width: 300px;
     justify-content: space-between;
-    margin: 10px auto;
+    margin: 15px auto;
     cursor: pointer;
 }
 .message{
@@ -126,26 +139,44 @@ export default{
 .message:hover{
     background: rgba(221, 160, 221, 0.498);
 }
+.group-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 200px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    margin-top: -10px;
+}
 .groups{
-    width:300px;
-    height: 80px;
+
+    height: 160px;
+    box-sizing: border-box;
     background: rgb(231, 231, 231);
-    margin: 10px auto;
+    margin: 30px auto;
     border-radius: 10px;
-
+    position: relative;
+    width:140px;
+    box-shadow: -1px -1px 7px 1px rgba(0, 0, 0, 0.163);
+    background: rgb(231, 231, 231);
+    cursor: pointer;
 
 }
-.dashbutton{
-    position: absolute;
-    margin-top:180px;
-    margin-left: 160px;
-    width:3em;
-    height: 3em;
-}
 
-.matchContainer:hover{
-    background: rgb(236, 236, 236);
-    box-shadow: inset 4px 4px 10px 2px rgba(10, 10, 10, 0.27), inset -2px -4px 15px 5px rgb(254, 252, 252);
+.group-container :nth-child(3){
+
+    transform: translateX(-120px);
+
+}
+.group-container :nth-child(2){
+
+    margin-top: 20px;
+    transform: translateX(-60px);
+    z-index: 1;
+
+}
+.group-container :nth-child(2):hover{
+    box-shadow: inset 1px 1px 1px 1px rgb(192, 227, 197), inset -1px -1px 1px 1px rgb(192, 227, 197);
 }
 
 </style>

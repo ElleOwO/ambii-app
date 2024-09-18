@@ -133,6 +133,9 @@ export default{
     cursor: pointer;
 
 }
+.pill:hover{
+    background: rgb(255, 250, 241);
+}
 .prompt{
     width: 350px;
     height: 100px;
