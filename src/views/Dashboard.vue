@@ -118,7 +118,7 @@ export default{
 
 }
 .matchContainer:hover{
-    box-shadow: inset 1px 1px 1px 1px rgb(192, 227, 197), inset -1px -1px 1px 1px rgb(192, 227, 197);
+    box-shadow: inset 1px 1px 5px 1px rgb(183, 183, 183), inset -1px -1px 1px 1px rgb(219, 219, 219);
 
 }
 
@@ -176,7 +176,7 @@ export default{
 
 }
 .group-container :nth-child(2):hover{
-    box-shadow: inset 1px 1px 1px 1px rgb(192, 227, 197), inset -1px -1px 1px 1px rgb(192, 227, 197);
+    box-shadow: inset 1px 1px 5px 1px rgb(191, 191, 191), inset -1px -1px 1px 1px rgb(218, 218, 218);
 }
 
 </style>
