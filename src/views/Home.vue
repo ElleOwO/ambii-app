@@ -3,7 +3,11 @@
 
   <h1 class="title">{{ title }}</h1>
   <h2 class="slogan">{{ slogan }}</h2>
-  <img v-bind:src="frontImage"/>
+  <!-- <img v-bind:src="frontImage"/> -->
+   <video autoplay loop muted>
+    <source src="../assets/ambii.mp4" type="video/webm"/>
+    <source src="../assets/ambii.mp4" type="video/mp4"/>
+  </video>
 
   <div v-if="showModal">
     <ModalForm/>
@@ -122,5 +126,14 @@ transform: rotate(180deg);
 margin-top: -40px;
 font-weight: 100;
 font-size: 24px;
+}
+video{
+  position:absolute;
+  z-index: -1 !important;
+  width: 375px; /* Width of iPhone screen */
+  height: 667px;
+  border-radius: 36px; /* Rounded corners */
+
+
 }
  </style>
