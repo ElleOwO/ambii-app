@@ -12,23 +12,29 @@
     justify-content: center;
     border: 100;
     margin-top: 500px;
-    background:grey;
+    background:#746b6b;
     margin-left:140px;
     border-radius: 36px;
     width:100px;
     z-index: 4;
-    opacity: 40%;
+    opacity: 60%;
+
+
+
+    background-color: rgba(255,255,255,0.50);
+    border: 1px solid rgba(255,255,255,0.1);
+
+
+
+
 
 }
 .button-container:hover{
     background: rgba(108, 108, 108, 0.1);
-    box-shadow: 0 0 3px #929090, 0 0 5px #03030a;
-
-
 }
    .buttons-vue{
     position:relative;
-    color: white;
+    color: rgb(111, 102, 102);
     justify-content: center;
     border: 10px;
     background:none;
@@ -37,7 +43,6 @@
 
 
    }
-   .buttons-vue:hover{
-    color: rgb(35, 87, 89);
-   }
+
+
 </style>

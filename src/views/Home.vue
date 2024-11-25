@@ -133,7 +133,7 @@ video{
   width: 375px; /* Width of iPhone screen */
   height: 667px;
   border-radius: 36px; /* Rounded corners */
-  opacity: 40%;
+  opacity: 50%;
 
 
 }

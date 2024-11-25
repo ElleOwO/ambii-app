@@ -43,5 +43,7 @@
     padding-left:10px;
     height: 25px;
     border-radius: 10px;
+    color:rgb(117, 113, 113);
+
 
   }</style>
