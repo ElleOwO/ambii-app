@@ -61,7 +61,7 @@ export default {
 
         width:100%;
         height: 100%;
-        background: rgb(146, 146, 146);
+        background: rgb(228, 228, 228);
         position:relative;
         border-radius: 25px;
         display: grid;
